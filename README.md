@@ -455,7 +455,6 @@ This platform is deployed and maintained for the broadband network engineering, 
 - **Operational Supervision**: **Glenn Michael Pagsuguiron** (Broadband Supervisor)
 - **Deployment Location**: Globe Telecom Operations Hub, Abreeza, Davao City, Philippines
 - **Infrastructure Partner**: Davao Light and Power Company (DLPC) Joint Pole Infrastructure
-- **Broadband Team Contact**: `glenn.pagsuguiron@globe.com.ph`
 - **System Administration**: `admin@globe.com.ph`
 
 ---

@@ -1,9 +1,26 @@
 {
   "users": [
     {
+      "id": "USR-GLENN01",
+      "email": "glenn.pagsuguiron@globe.com.ph",
+      "name": "Glenn Michael Pagsuguiron",
+      "role": "ADMIN",
+      "title": "Broadband Supervisor",
+      "password": "globe2026!",
+      "status": "ACTIVE"
+    },
+    {
       "id": "USR-ADMIN01",
+      "email": "admin@globe.com.ph",
+      "name": "Globe Broadband Admin",
+      "role": "ADMIN",
+      "password": "globe2026!",
+      "status": "ACTIVE"
+    },
+    {
+      "id": "USR-LEGACY01",
       "email": "admin@dlpc.com.ph",
-      "name": "DLPC Administrator",
+      "name": "DLPC Administrator (Legacy)",
       "role": "ADMIN",
       "password": "dlpc2026!",
       "status": "ACTIVE"
@@ -12,12 +29,12 @@
   "maps": [
     {
       "id": "MAP-DAVAO01",
-      "name": "DLPC Davao Central Grid",
-      "description": "Davao City Electrical & Fiber Distribution Network",
-      "ownerId": "USR-ADMIN01",
-      "centerLat": 7.071466,
-      "centerLng": 125.604971,
-      "zoom": 14,
+      "name": "Globe Broadband Davao Central Grid (Abreeza)",
+      "description": "Globe Telecom Broadband Network - Davao City Abreeza. Supervised by Glenn Michael Pagsuguiron",
+      "ownerId": "USR-GLENN01",
+      "centerLat": 7.091700,
+      "centerLng": 125.613600,
+      "zoom": 15,
       "createdAt": "2026-09-29T17:48:05.218Z"
     }
   ],
@@ -139,12 +156,13 @@
         ]
       ],
       "distanceMeters": 650,
-      "status": "Active",
+      "status": "Maintenance",
       "tags": [],
       "notes": "",
       "sessionToken": "MOCK_TOKEN_eyJ1c2VySWQiOiJVU1ItQURNSU4wMSIsInJvbGUiOiJBRE1JTiIsInRpbWUiOjE3OTA3MDQ3Nzg3NDd9",
       "shareToken": null,
-      "collaboratorName": "DLPC Administrator"
+      "collaboratorName": "DLPC Administrator",
+      "name": "ROUTE-Z6WGH"
     },
     {
       "action": "route:create",
@@ -449,12 +467,12 @@
         ]
       ],
       "distanceMeters": 542,
-      "status": "Active",
+      "status": "Maintenance",
       "tags": [],
       "notes": "",
-      "sessionToken": null,
-      "shareToken": "am3btkczg6u3495077rgi",
-      "collaboratorName": "Collaborator (EDIT)"
+      "sessionToken": "MOCK_TOKEN_eyJ1c2VySWQiOiJVU1ItQURNSU4wMSIsInJvbGUiOiJBRE1JTiIsInRpbWUiOjE3OTA3MDQ3Nzg3NDd9",
+      "shareToken": null,
+      "collaboratorName": "DLPC Administrator"
     },
     {
       "action": "route:create",
@@ -561,6 +579,157 @@
       ],
       "distanceMeters": 527,
       "status": "Active",
+      "tags": [],
+      "notes": "",
+      "sessionToken": "MOCK_TOKEN_eyJ1c2VySWQiOiJVU1ItQURNSU4wMSIsInJvbGUiOiJBRE1JTiIsInRpbWUiOjE3OTA3MDQ3Nzg3NDd9",
+      "shareToken": null,
+      "collaboratorName": "DLPC Administrator"
+    },
+    {
+      "action": "route:create",
+      "mapId": "MAP-DAVAO01",
+      "id": "PREVIEW",
+      "name": "PREVIEW",
+      "startLat": 7.111838,
+      "startLng": 125.619393,
+      "endLat": 7.117106,
+      "endLng": 125.625745,
+      "generatedStartAddress": "Carlos P. Garcia Highway, Dragon Compound, Milan, Buhangin, Buhangin District, Davao City, Davao Region, 8000, Philippines",
+      "correctedStartAddress": "Carlos P. Garcia Highway, Dragon Compound, Milan, Buhangin, Buhangin District, Davao City, Davao Region, 8000, Philippines",
+      "generatedEndAddress": "Carlos P. Garcia Highway, San Antonio, Alfonso Angliongto Sr., Cabantian, Buhangin District, Davao City, Davao Region, 8000, Philippines",
+      "correctedEndAddress": "Carlos P. Garcia Highway, San Antonio, Alfonso Angliongto Sr., Cabantian, Buhangin District, Davao City, Davao Region, 8000, Philippines",
+      "geometry": [
+        [
+          7.111858,
+          125.619379
+        ],
+        [
+          7.11206,
+          125.619664
+        ],
+        [
+          7.112196,
+          125.619857
+        ],
+        [
+          7.112472,
+          125.62025
+        ],
+        [
+          7.11265,
+          125.620508
+        ],
+        [
+          7.112925,
+          125.620894
+        ],
+        [
+          7.113306,
+          125.62143
+        ],
+        [
+          7.113494,
+          125.621683
+        ],
+        [
+          7.113656,
+          125.621911
+        ],
+        [
+          7.113827,
+          125.622152
+        ],
+        [
+          7.113933,
+          125.622299
+        ],
+        [
+          7.114179,
+          125.622659
+        ],
+        [
+          7.114294,
+          125.622826
+        ],
+        [
+          7.114383,
+          125.622954
+        ],
+        [
+          7.114444,
+          125.623044
+        ],
+        [
+          7.114489,
+          125.623111
+        ],
+        [
+          7.114853,
+          125.623601
+        ],
+        [
+          7.114908,
+          125.623672
+        ],
+        [
+          7.115009,
+          125.623795
+        ],
+        [
+          7.115107,
+          125.623904
+        ],
+        [
+          7.115217,
+          125.624028
+        ],
+        [
+          7.115257,
+          125.624072
+        ],
+        [
+          7.11535,
+          125.624162
+        ],
+        [
+          7.115607,
+          125.62441
+        ],
+        [
+          7.115799,
+          125.624585
+        ],
+        [
+          7.115915,
+          125.624689
+        ],
+        [
+          7.116002,
+          125.62477
+        ],
+        [
+          7.116339,
+          125.625074
+        ],
+        [
+          7.116708,
+          125.62541
+        ],
+        [
+          7.11695,
+          125.625638
+        ],
+        [
+          7.117069,
+          125.625747
+        ],
+        [
+          7.117088,
+          125.625765
+        ]
+      ],
+      "distanceMeters": 0,
+      "status": "Maintenance",
       "tags": [],
       "notes": "",
       "sessionToken": "MOCK_TOKEN_eyJ1c2VySWQiOiJVU1ItQURNSU4wMSIsInJvbGUiOiJBRE1JTiIsInRpbWUiOjE3OTA3MDQ3Nzg3NDd9",

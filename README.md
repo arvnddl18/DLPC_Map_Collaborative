@@ -1,7 +1,8 @@
-# DLPC Collaborative Interactive Map Platform
+# Collaborative Interactive Map Platform
+### Globe Telecom Broadband Team (Abreeza, Davao City) & DLPC Utility Infrastructure
 
-> **Next-Generation Spatial Intelligence, Road-Aligned Routing, and Real-Time Field Collaboration for Electric & Fiber Utility Networks.**  
-> *Developed for Davao Light and Power Company (DLPC).*
+> **Next-Generation Spatial Intelligence, Road-Aligned Routing, and Real-Time Field Collaboration for Fiber Broadband & Electric Utility Networks.**  
+> *Used by the **Broadband Team** of **Globe Telecom** (Abreeza, Davao City) under the supervision of **Glenn Michael Pagsuguiron**, in operational collaboration with **Davao Light and Power Company (DLPC)** utility infrastructure.*
 
 ---
 
@@ -41,15 +42,16 @@
 
 ## 🌟 Executive Summary
 
-The **DLPC Collaborative Interactive Map Platform** is a specialized, web-based Geographic Information System (GIS) and operational planning hub tailored specifically for the power distribution and telecommunications infrastructure of **Davao Light and Power Company (DLPC)**.
+The **Collaborative Interactive Map Platform** is a specialized, web-based Geographic Information System (GIS) and operational planning hub deployed for the **Globe Telecom Broadband Team** based in **Davao City (Abreeza Hub)**, under the direct operational supervision of **Glenn Michael Pagsuguiron**, working in synergy with the power distribution and pole infrastructure of **Davao Light and Power Company (DLPC)**.
 
-In modern utility operations, field planners, design engineers, maintenance dispatchers, and external contractors must collaborate quickly to survey power poles, lay fiber-optic cables, locate Network Access Points (NAPs), and establish optimal routing corridors across Davao City and surrounding regions. 
+In modern telecommunication and broadband network operations across Davao City, broadband field planners, fiber-to-the-home (FTTH) network design engineers, dispatchers, maintenance crews, and contracted line teams must coordinate rapidly to survey utility poles, design fiber-optic cable runs, locate and inspect **Network Access Points (NAPs)**, and establish optimal road-aligned routing corridors across commercial, residential, and industrial zones—including Bajada, Lanang, the Abreeza central district, and the greater Davao Region.
 
 This platform bridges the historical divide between heavy, expensive desktop GIS software and slow, error-prone spreadsheets. It delivers a fast, responsive, web-based experience combining **real-time collaborative vector drawing (similar to Canva or Figma)**, **automated road-following route calculation (similar to Google Maps)**, and **instant spatial proximity analysis** across tens of thousands of utility infrastructure assets—right inside a standard web browser on desktop or mobile.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                       DLPC COLLABORATIVE MAP PLATFORM                       │
+│                 GLOBE BROADBAND DAVAO CENTRAL GRID (ABREEZA)                │
+│                 Collaborative GIS & Utility Infrastructure Hub               │
 │                                                                             │
 │   [ Live Multi-User Sync ]     [ Turn-by-Turn Road Routing ]                │
 │   Planners & crews draw and     Calculates true road polylines,             │
@@ -67,13 +69,13 @@ This platform bridges the historical divide between heavy, expensive desktop GIS
 
 ## ⚡ The Core Problem & Real-World Impact
 
-Before this system was architected, infrastructure planning faced four critical bottlenecks common across large utility providers:
+Before this system was architected, broadband infrastructure planning and fiber deployment faced four critical bottlenecks across Davao City:
 
-| Traditional Challenge | The Operational Pain | How DLPC Map Solves It |
+| Traditional Challenge | The Operational Pain | How This Platform Solves It |
 | :--- | :--- | :--- |
 | **Massive Spreadsheet Overload** | Facility reports contain over **314,000 nationwide records (345MB+)**. Opening them in Excel freezes standard office PCs, and isolating Davao-specific records takes hours. | A background **Web Worker streaming parser** filters and validates 19,900+ Davao records in ~6 seconds with zero browser lag. |
-| **Disconnected Communication** | Engineers in the office and linemen in the field passed static screenshots, marked-up PDFs, and emails back and forth, leading to version confusion. | **Live multi-user presence & drawing**. Team members see each other's live cursors, active tools, and real-time strokes as they happen. |
-| **Straight-Line Distance Errors** | Planners drew straight lines between poles, leading to inaccurate cable length estimates that ignored real street curvature, buildings, and rivers. | **Automated road-following routing** powered by OSRM generates exact roadway paths, precise driving/cabling distances, and verified street addresses. |
+| **Disconnected Communication** | Office planners at Abreeza and fiber technicians in the field passed static screenshots, marked-up PDFs, and emails back and forth, leading to version confusion. | **Live multi-user presence & drawing**. Team members see each other's live cursors, active tools, and real-time strokes as they happen. |
+| **Straight-Line Distance Errors** | Planners drew straight lines between utility poles, leading to inaccurate cable length estimates that ignored real street curvature, buildings, and rivers. | **Automated road-following routing** powered by OSRM generates exact roadway paths, precise driving/cabling distances, and verified street addresses. |
 | **Hidden Infrastructure Assets** | Determining which distribution boxes or NAPs fell along a planned route required manual spatial cross-referencing against complex databases. | An **automated spatial buffer engine** continuously scans all visible routes and instantly highlights nearby facilities within a 25-meter corridor. |
 
 ---
@@ -222,25 +224,25 @@ graph TB
 
 ## 👥 Operational Personas & Practical Workflows
 
-To see how the platform functions in daily practice, review these typical user journeys:
+To see how the platform functions in daily practice for Globe Telecom's Broadband Team in Davao City, review these typical user journeys:
 
-### Scenario A: The Network Design Engineer (Office Station)
-1. **Initiate Project**: Engineer logs into the platform and searches for *"Bajada"* using the global search bar (`/` or click).
-2. **Draft Infrastructure Route**: Opens the Route Planner (`R`), clicks the Bajada Distribution Hub as the starting point, and clicks the Lanang Commercial Hub as the destination.
+### Scenario A: The Broadband Network Design Engineer (Abreeza Office Station)
+1. **Initiate Project**: Engineer logs into the platform and searches for *"Abreeza"* or *"Bajada"* using the global search bar (`/` or click).
+2. **Draft Infrastructure Route**: Opens the Route Planner (`R`), clicks the Abreeza Hub / Bajada Distribution Hub as the starting point, and clicks the Lanang Commercial Hub as the destination.
 3. **Verify Road Alignment**: The system instantly generates a road-following polyline, calculates the total distance (e.g., *3.42 km*), and fills in the starting and ending street addresses.
 4. **Identify Connection Points**: As the route renders, the Spatial Engine automatically highlights **14 NAP boxes** located within 25 meters of that road corridor.
-5. **Annotate Critical Hazards**: Using the Freehand Pen (`P`) and Text (`T`) tools, the engineer circles a bridge crossing and labels it *"Check utility pole clearance"*.
+5. **Annotate Critical Hazards**: Using the Freehand Pen (`P`) and Text (`T`) tools, the engineer circles a bridge crossing and labels it *"Check DLPC pole clearance and fiber slack loop"*.
 
-### Scenario B: The Field Lineman / Inspector (Mobile Tablet)
+### Scenario B: The Globe Field Lineman / Fiber Technician (Mobile Tablet / Smartphone)
 1. **Access via Share Link**: The lineman opens a secure link provided by dispatch on their mobile phone or tablet browser—no app installation required.
-2. **Real-Time Orientation**: The map centers on the work area with mobile-friendly controls and high-resolution satellite imagery enabled.
-3. **Collaborative Visibility**: The lineman sees the office engineer's cursor and notes on the screen in real time.
+2. **Real-Time Orientation**: The map centers on the work area (e.g. J.P. Laurel Ave near Abreeza) with mobile-friendly controls and high-resolution satellite imagery enabled.
+3. **Collaborative Visibility**: The lineman sees the Abreeza engineering office cursor and notes on the screen in real time.
 4. **Inspect Facility Details**: Lineman taps a highlighted NAP facility on the screen. The bottom sheet slides up, confirming that the box has **4 available ports** remaining.
 
-### Scenario C: The Operations Director (Executive Review)
-1. **Portfolio Overview**: Director accesses the map to review all active electrical distribution lines and fiber corridors across Davao City.
-2. **Access Control**: Opens the Share Modal to generate a view-only link for an external auditing firm.
-3. **Audit History**: Validates that all modifications are logged with user identifiers, timestamps, and geographic coordinates.
+### Scenario C: Broadband Supervisor Glenn Michael Pagsuguiron (Operational Leadership & Review)
+1. **Portfolio Overview**: Supervisor Pagsuguiron accesses the map dashboard to oversee all active fiber rollouts, feeder routes, and joint-use utility pole attachments across Davao City.
+2. **Access Control & Delegation**: Opens the Share Modal to generate scoped view-only or editing tokens for contracted installation crews and partners.
+3. **Audit History & Compliance**: Validates that all modifications are logged with user identifiers, timestamps, and geographic coordinates for enterprise QA.
 
 ---
 
@@ -287,10 +289,22 @@ To see how the platform functions in daily practice, review these typical user j
    http://localhost:3000
    ```
 
-6. **Default Administrator Credentials**:
-   - **Email**: `admin@dlpc.com.ph`
-   - **Password**: `dlpc2026!`
-   *(Provides full `ADMIN` access to routes, drawings, share token generation, and facility imports).*
+6. **Default User Accounts & Credentials**:
+   The local database comes pre-seeded with active credentials configured for the Davao City Broadband Team:
+   - **Broadband Supervisor**:
+     - **Name**: Glenn Michael Pagsuguiron
+     - **Email**: `glenn.pagsuguiron@globe.com.ph`
+     - **Password**: `globe2026!`
+     - **Role**: `ADMIN` (Broadband Supervisor, Davao City Abreeza)
+   - **Globe Broadband Admin**:
+     - **Email**: `admin@globe.com.ph`
+     - **Password**: `globe2026!`
+     - **Role**: `ADMIN`
+   - **Utility Infrastructure Partner (DLPC Legacy Admin)**:
+     - **Email**: `admin@dlpc.com.ph`
+     - **Password**: `dlpc2026!`
+     - **Role**: `ADMIN`
+   *(Provides full access to routes, drawings, cryptographic share link management, and facility imports).*
 
 ---
 
@@ -429,19 +443,21 @@ DLPC_Map_Collaborative/
 - [x] **Phase 8: Continuous Drawing & Move Tool** (Continuous tool persistence, translation engine).
 - [ ] **Phase 9: Offline PWA Caching** (ServiceWorker tile caching for disconnected mountain/field zones).
 - [ ] **Phase 10: Direct KML / GeoJSON Export** (One-click export for AutoCAD and Google Earth compatibility).
-- [ ] **Phase 11: Real-Time Power Outage Overlay** (Integration with DLPC SCADA system alerts).
+- [ ] **Phase 11: Real-Time Power & Outage Overlay** (Integration with DLPC SCADA system alerts and Globe Telecom fiber monitoring).
 
 ---
 
 ## 🤝 Support, Governance & Contributions
 
-### Internal DLPC Project Team
-This project is maintained for the internal operations, network engineering, and planning departments of **Davao Light and Power Company**. 
+### Globe Telecom Broadband Team — Davao City Operations
+This platform is deployed and maintained for the broadband network engineering, operations, and field deployment teams of **Globe Telecom** based in **Abreeza, Davao City**.
 
-For questions, feature proposals, or security disclosures:
-- **Internal System Contact**: DLPC Network Operations & Systems Development Team
-- **Administrative Support**: `admin@dlpc.com.ph`
+- **Operational Supervision**: **Glenn Michael Pagsuguiron** (Broadband Supervisor)
+- **Deployment Location**: Globe Telecom Operations Hub, Abreeza, Davao City, Philippines
+- **Infrastructure Partner**: Davao Light and Power Company (DLPC) Joint Pole Infrastructure
+- **Broadband Team Contact**: `glenn.pagsuguiron@globe.com.ph`
+- **System Administration**: `admin@globe.com.ph`
 
 ---
 
-*© 2026 Davao Light and Power Company (DLPC). All rights reserved. Confidential and proprietary utility software.*
+*© 2026 Globe Telecom Broadband Team (Abreeza, Davao City) & Davao Light and Power Company (DLPC). All rights reserved. Confidential and proprietary utility and telecommunications software.*

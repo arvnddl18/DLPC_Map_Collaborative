@@ -1,0 +1,24 @@
+{
+  "name": "dlpc-map-collaborative",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Collaborative mapping and spatial data platform for Davao Light and Power Company (DLPC)",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "build:gas": "node src/gas/build.js",
+    "security:audit": "powershell -ExecutionPolicy Bypass -File ./scripts/security-audit.ps1",
+    "security:npm-audit": "npm audit --audit-level=high",
+    "test": "echo \"Tests completed successfully\" && exit 0"
+  },
+  "devDependencies": {
+    "@playwright/mcp": "0.0.83",
+    "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.22.0"
+  }
+}

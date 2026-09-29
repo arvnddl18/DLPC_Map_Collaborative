@@ -1,0 +1,150 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - banner [ref=f2e3]:
+      - generic [ref=f2e4]:
+        - generic [ref=f2e5]: DLPC MAP
+        - generic "Click to rename map" [ref=f2e9]: DLPC Davao Central Grid
+      - textbox "Search address, route ID, NAP ID, coords..." [ref=f2e13]
+      - generic [ref=f2e14]:
+        - button "Share" [ref=f2e15] [cursor=pointer]
+        - generic [ref=f2e23]:
+          - generic [ref=f2e24]:
+            - generic [ref=f2e25]: Guest Viewer
+            - generic [ref=f2e26]: VIEWER
+          - button "Admin Login" [ref=f2e27] [cursor=pointer]
+    - complementary [ref=f2e28]:
+      - generic [ref=f2e29]:
+        - button "Select (V)" [ref=f2e30] [cursor=pointer]
+        - button "Move (M)" [ref=f2e33] [cursor=pointer]
+        - button "Route Planner (R)" [ref=f2e39] [cursor=pointer]
+        - button "Pen (P)" [ref=f2e45] [cursor=pointer]
+        - button "Line (L)" [ref=f2e51] [cursor=pointer]
+        - button "Rectangle (S)" [ref=f2e55] [cursor=pointer]
+        - button "Circle (C)" [ref=f2e58] [cursor=pointer]
+        - button "Text (T)" [ref=f2e61] [cursor=pointer]
+        - button "Pin (N)" [ref=f2e64] [cursor=pointer]
+        - button "Undo" [ref=f2e69] [cursor=pointer]
+        - button "Redo" [ref=f2e73] [cursor=pointer]
+        - button "Layers (K)" [ref=f2e78] [cursor=pointer]
+        - button "Import NAP" [ref=f2e83] [cursor=pointer]
+    - main [ref=f2e87]:
+      - generic [ref=f2e88]:
+        - generic:
+          - generic [ref=f2e89]:
+            - button "Zoom in" [ref=f2e90] [cursor=pointer]: +
+            - button "Zoom out" [ref=f2e91] [cursor=pointer]: −
+          - generic [ref=f2e92]:
+            - link "Leaflet" [ref=f2e93] [cursor=pointer]:
+              - /url: https://leafletjs.com
+            - text: "| © OpenStreetMap contributors"
+    - complementary [ref=f2e98]:
+      - generic [ref=f2e99]:
+        - generic [ref=f2e100]:
+          - generic [ref=f2e101]: Inspector
+          - generic [ref=f2e102]: DETAILS
+        - button "×" [ref=f2e103] [cursor=pointer]
+    - contentinfo [ref=f2e106]:
+      - generic [ref=f2e107]:
+        - generic [ref=f2e108]: Live Connected
+        - generic [ref=f2e111]: 1 collaborator online
+      - generic [ref=f2e112]:
+        - generic [ref=f2e113]: "Cursor: 7.071466, 125.604971"
+        - generic [ref=f2e114]: Davao Light & Power Company
+  - generic:
+    - generic:
+      - generic:
+        - heading "Import NAP Facility Spreadsheet" [level=3]
+        - button "×"
+      - generic:
+        - paragraph: Upload your telecom facility report (.csv or .xlsx). The streaming worker will automatically filter for Davao South and Davao North records to maintain ultra-fast performance.
+        - generic:
+          - generic: Click to browse or drag & drop spreadsheet
+          - generic: Supports .csv (up to 350MB) and .xlsx files
+      - generic:
+        - button "Cancel"
+        - button "Confirm & Import" [disabled]
+  - generic:
+    - generic:
+      - generic:
+        - heading "Share Map & Access Control" [level=3]
+        - button "×"
+      - generic:
+        - generic:
+          - generic: 👁️ View-Only Link (Read-only access)
+          - generic:
+            - textbox
+            - button "Copy"
+          - generic: Users with this link can view routes, NAPs, and drawings, but cannot edit.
+        - generic:
+          - generic: ✏️ Collaborative Edit Link (Real-time editing)
+          - generic:
+            - textbox
+            - button "Copy"
+          - generic: Users with this link can create routes, draw on the map, and collaborate in real-time.
+        - generic:
+          - heading "Active Share Links" [level=4]
+          - generic:
+            - table:
+              - rowgroup:
+                - row "Token Role Created Status Action":
+                  - columnheader "Token"
+                  - columnheader "Role"
+                  - columnheader "Created"
+                  - columnheader "Status"
+                  - columnheader "Action"
+              - rowgroup:
+                - row "Loading links...":
+                  - cell "Loading links..."
+      - generic:
+        - button "Close"
+  - generic:
+    - generic:
+      - generic:
+        - heading "Map Layers & Spatial Proximity" [level=3]
+        - button "×"
+      - generic:
+        - generic:
+          - generic: Visible Layers
+          - generic:
+            - generic:
+              - checkbox "🛣️ Road-Aligned Routes" [checked]
+              - generic: 🛣️ Road-Aligned Routes
+            - generic:
+              - checkbox "⚡ NAP Facilities (Route Proximity Visible)" [checked]
+              - generic: ⚡ NAP Facilities (Route Proximity Visible)
+            - generic:
+              - checkbox "🎨 Canva Vector Drawings & Annotations" [checked]
+              - generic: 🎨 Canva Vector Drawings & Annotations
+            - generic:
+              - checkbox "👥 Collaborator Live Cursors" [checked]
+              - generic: 👥 Collaborator Live Cursors
+        - generic:
+          - generic:
+            - generic: NAP Proximity Threshold
+            - generic: 25 meters
+          - slider: "25"
+          - generic: NAPs are only displayed when within this distance of an active route.
+        - generic:
+          - generic: Base Map Tile Layer
+          - generic:
+            - button "OpenStreetMap"
+            - button "Satellite Imagery"
+      - generic:
+        - button "Done"
+  - generic:
+    - generic:
+      - generic:
+        - heading "DLPC Administrator Login" [level=3]
+        - button "×"
+      - generic:
+        - generic:
+          - generic:
+            - generic: Email Address
+            - textbox: admin@dlpc.com.ph
+          - generic:
+            - generic: Password
+            - textbox: dlpc2026!
+          - generic: "Default Admin: admin@dlpc.com.ph / dlpc2026!"
+        - generic:
+          - button "Cancel"
+          - button "Login"

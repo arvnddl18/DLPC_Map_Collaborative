@@ -1,0 +1,235 @@
+- generic [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - banner [ref=f4e3]:
+      - generic [ref=f4e4]: DLPC MAP
+      - textbox "Search address, route ID, NAP ID, coords..." [ref=f4e11]
+      - generic [ref=f4e12]:
+        - generic [ref=f4e134]:
+          - generic "DLPC Administrator (You)" [ref=f4e135] [cursor=pointer]: D
+          - generic "DLPC Administrator (Online)" [ref=f4e137] [cursor=pointer]: D
+        - button [ref=f4e13] [cursor=pointer]
+        - button "Logout" [ref=f4e21] [cursor=pointer]
+    - complementary [ref=f4e22]:
+      - generic [ref=f4e23]:
+        - button "Select / Pan (V)" [ref=f4e24] [cursor=pointer]
+        - button "Move Object (M)" [ref=f4e27] [cursor=pointer]
+        - button "Road Route Planner (R)" [active] [ref=f4e33] [cursor=pointer]
+        - button "Freehand Pen (P)" [ref=f4e39] [cursor=pointer]
+        - button "Straight Line / Arrow (L)" [ref=f4e45] [cursor=pointer]
+        - button "Rectangle Shape (S)" [ref=f4e49] [cursor=pointer]
+        - button "Circle Shape (C)" [ref=f4e52] [cursor=pointer]
+        - button "Text Label (T)" [ref=f4e55] [cursor=pointer]
+        - button "Marker Pin (N)" [ref=f4e58] [cursor=pointer]
+        - button "Undo (Ctrl+Z)" [ref=f4e63] [cursor=pointer]
+        - button "Redo (Ctrl+Y)" [ref=f4e67] [cursor=pointer]
+        - button "Map Layers & Proximity Settings" [ref=f4e72] [cursor=pointer]
+        - button "Import NAP Spreadsheet (XLSX/CSV)" [ref=f4e77] [cursor=pointer]
+    - main [ref=f4e81]:
+      - generic [ref=f4e82]:
+        - generic:
+          - generic:
+            - img:
+              - generic:
+                - generic [ref=f4e83] [cursor=pointer]
+                - generic [ref=f4e84] [cursor=pointer]
+                - generic [ref=f4e85] [cursor=pointer]
+                - generic [ref=f4e86] [cursor=pointer]
+                - generic [ref=f4e87] [cursor=pointer]
+                - generic [ref=f4e88] [cursor=pointer]
+                - generic [ref=f4e89] [cursor=pointer]
+                - generic [ref=f4e90] [cursor=pointer]
+                - generic [ref=f4e91] [cursor=pointer]
+                - generic [ref=f4e92] [cursor=pointer]
+                - generic [ref=f4e93] [cursor=pointer]
+                - generic [ref=f4e94] [cursor=pointer]
+                - generic [ref=f4e95] [cursor=pointer]
+                - generic [ref=f4e96] [cursor=pointer]
+                - generic [ref=f4e97] [cursor=pointer]
+                - generic [ref=f4e98] [cursor=pointer]
+                - generic [ref=f4e99] [cursor=pointer]
+                - generic [ref=f4e100] [cursor=pointer]
+                - generic [ref=f4e101] [cursor=pointer]
+                - generic [ref=f4e102] [cursor=pointer]
+                - generic [ref=f4e103] [cursor=pointer]
+                - generic [ref=f4e104] [cursor=pointer]
+                - generic [ref=f4e105] [cursor=pointer]
+                - generic [ref=f4e106] [cursor=pointer]
+                - generic [ref=f4e107] [cursor=pointer]
+                - generic [ref=f4e108] [cursor=pointer]
+                - generic [ref=f4e109] [cursor=pointer]
+                - generic [ref=f4e110] [cursor=pointer]
+                - generic [ref=f4e111] [cursor=pointer]
+                - generic [ref=f4e112] [cursor=pointer]
+                - generic [ref=f4e113] [cursor=pointer]
+                - generic [ref=f4e114] [cursor=pointer]
+          - button "asdasdadada" [ref=f4e115] [cursor=pointer]
+        - generic:
+          - generic [ref=f4e117]:
+            - button "Zoom in" [ref=f4e118] [cursor=pointer]: +
+            - button "Zoom out" [ref=f4e119] [cursor=pointer]: −
+          - generic [ref=f4e120]:
+            - link "Leaflet" [ref=f4e121] [cursor=pointer]:
+              - /url: https://leafletjs.com
+            - text: "| © OpenStreetMap contributors"
+    - complementary [ref=f4e126]:
+      - generic [ref=f4e127]:
+        - generic [ref=f4e128]:
+          - generic [ref=f4e129]: Create Road Route
+          - generic [ref=f4e130]: ROUTING
+        - button "×" [ref=f4e131] [cursor=pointer]
+      - generic [ref=f4e132]:
+        - generic [ref=f4e139]:
+          - generic [ref=f4e140]:
+            - generic [ref=f4e141]: Route Name
+            - generic [ref=f4e142]: EDITABLE
+          - textbox "Route Name" [ref=f4e143]:
+            - /placeholder: e.g., Buhangin - F.S. Dizon Feeder Route
+        - generic [ref=f4e144]:
+          - generic [ref=f4e145]: Start Coordinate (Lat, Lng)
+          - generic [ref=f4e146]:
+            - textbox "Latitude" [ref=f4e147]: "7.108985"
+            - textbox "Longitude" [ref=f4e148]: "125.614170"
+          - button "📍 Pick Start on Map" [ref=f4e149] [cursor=pointer]
+        - generic [ref=f4e150]:
+          - generic [ref=f4e151]:
+            - generic [ref=f4e152]: Generated Start Address (Read-only)
+            - button "🔄 Auto-lookup" [ref=f4e153] [cursor=pointer]
+          - textbox "Resolving address..." [ref=f4e154]: Carlos P. Garcia Highway, Apollo, Milan, Buhangin, Buhangin District, Davao City, Davao Region, 8000, Philippines
+        - generic [ref=f4e155]:
+          - generic [ref=f4e156]:
+            - generic [ref=f4e157]: Editable Start Address (Admin/Editor)
+            - generic [ref=f4e158]: EDITABLE
+          - textbox "Enter operational start address" [ref=f4e159]: Carlos P. Garcia Highway, Apollo, Milan, Buhangin, Buhangin District, Davao City, Davao Region, 8000, Philippines
+        - generic [ref=f4e160]:
+          - generic [ref=f4e161]: End Coordinate (Lat, Lng)
+          - generic [ref=f4e162]:
+            - textbox "Latitude" [ref=f4e163]: "7.111776"
+            - textbox "Longitude" [ref=f4e164]: "125.619294"
+          - button "📍 Pick End on Map" [ref=f4e165] [cursor=pointer]
+        - generic [ref=f4e166]:
+          - generic [ref=f4e167]:
+            - generic [ref=f4e168]: Generated End Address (Read-only)
+            - button "🔄 Auto-lookup" [ref=f4e169] [cursor=pointer]
+          - textbox "Resolving address..." [ref=f4e170]: Carlos P. Garcia Highway, Dragon Compound, Milan, Buhangin, Buhangin District, Davao City, Davao Region, 8000, Philippines
+        - generic [ref=f4e171]:
+          - generic [ref=f4e172]:
+            - generic [ref=f4e173]: Editable End Address (Admin/Editor)
+            - generic [ref=f4e174]: EDITABLE
+          - textbox "Enter operational end address" [ref=f4e175]: Carlos P. Garcia Highway, Dragon Compound, Milan, Buhangin, Buhangin District, Davao City, Davao Region, 8000, Philippines
+        - generic [ref=f4e176]:
+          - generic [ref=f4e177]: Road Distance
+          - generic [ref=f4e178]: "--"
+        - generic [ref=f4e179]:
+          - generic [ref=f4e180]: Status
+          - combobox [ref=f4e181]:
+            - option "Active" [selected]
+            - option "Planned"
+            - option "Completed"
+            - option "Maintenance"
+        - generic [ref=f4e182]:
+          - generic [ref=f4e183]: Tags
+          - textbox "Type tag and press Enter" [ref=f4e184]
+        - generic [ref=f4e185]:
+          - generic [ref=f4e186]: Notes
+          - textbox "Add operational notes..." [ref=f4e187]
+      - generic [ref=f4e133]:
+        - button "⚡ Generate Road Route" [ref=f4e188] [cursor=pointer]
+        - button "Save Route" [ref=f4e189] [cursor=pointer]
+  - generic:
+    - generic:
+      - generic:
+        - heading "Import NAP Facility Spreadsheet" [level=3]
+        - button "×"
+      - generic:
+        - paragraph: Upload your telecom facility report (.csv or .xlsx). The streaming worker will automatically filter for Davao South and Davao North records to maintain ultra-fast performance.
+        - generic:
+          - generic: Click to browse or drag & drop spreadsheet
+          - generic: Supports .csv (up to 350MB) and .xlsx files
+      - generic:
+        - button "Cancel"
+        - button "Confirm & Import" [disabled]
+  - generic:
+    - generic:
+      - generic:
+        - heading "Share Map & Access Control" [level=3]
+        - button "×"
+      - generic:
+        - generic:
+          - generic: 👁️ View-Only Link (Read-only access)
+          - generic:
+            - textbox
+            - button "Copy"
+          - generic: Users with this link can view routes, NAPs, and drawings, but cannot edit.
+        - generic:
+          - generic: ✏️ Collaborative Edit Link (Real-time editing)
+          - generic:
+            - textbox
+            - button "Copy"
+          - generic: Users with this link can create routes, draw on the map, and collaborate in real-time.
+        - generic:
+          - heading "Active Share Links" [level=4]
+          - generic:
+            - table:
+              - rowgroup:
+                - row "Token Role Created Status Action":
+                  - columnheader "Token"
+                  - columnheader "Role"
+                  - columnheader "Created"
+                  - columnheader "Status"
+                  - columnheader "Action"
+              - rowgroup:
+                - row "Loading links...":
+                  - cell "Loading links..."
+      - generic:
+        - button "Close"
+  - generic:
+    - generic:
+      - generic:
+        - heading "Map Layers & Spatial Proximity" [level=3]
+        - button "×"
+      - generic:
+        - generic:
+          - generic: Visible Layers
+          - generic:
+            - generic:
+              - checkbox "🛣️ Road-Aligned Routes" [checked]
+              - generic: 🛣️ Road-Aligned Routes
+            - generic:
+              - checkbox "⚡ NAP Facilities (Route Proximity Visible)" [checked]
+              - generic: ⚡ NAP Facilities (Route Proximity Visible)
+            - generic:
+              - checkbox "🎨 Canva Vector Drawings & Annotations" [checked]
+              - generic: 🎨 Canva Vector Drawings & Annotations
+            - generic:
+              - checkbox "👥 Collaborator Live Cursors" [checked]
+              - generic: 👥 Collaborator Live Cursors
+        - generic:
+          - generic:
+            - generic: NAP Proximity Threshold
+            - generic: 25 meters
+          - slider: "25"
+          - generic: NAPs are only displayed when within this distance of an active route.
+        - generic:
+          - generic: Base Map Tile Layer
+          - generic:
+            - button "OpenStreetMap"
+            - button "Satellite Imagery"
+      - generic:
+        - button "Done"
+  - generic:
+    - generic:
+      - generic:
+        - heading "DLPC Administrator Login" [level=3]
+        - button "×"
+      - generic:
+        - generic:
+          - generic:
+            - generic: Email Address
+            - textbox: admin@dlpc.com.ph
+          - generic:
+            - generic: Password
+            - textbox: dlpc2026!
+          - generic: "Default Admin: admin@dlpc.com.ph / dlpc2026!"
+        - generic:
+          - button "Cancel"
+          - button "Login"
